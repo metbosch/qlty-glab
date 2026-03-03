@@ -30,7 +30,7 @@ qlty-check:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
   image:
-    name: registry.example.com/group/project/qlty-gitlab-base:latest
+    name: ghcr.io/metbosch/qlty-glab
     entrypoint: [""]
   script:
     - qlty init --no || echo "Already initialized"
